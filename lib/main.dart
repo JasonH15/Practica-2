@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Tarea',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlueAccent),
           useMaterial3: true,
@@ -40,10 +40,14 @@ class _MyHomePageState extends State<MyHomePage> {
         body: const Padding(
           padding: EdgeInsets.all(60.0),
           child: Center(
-            child: Card(
-              child: Row(mainAxisSize: MainAxisSize.min, children: [
-                Head(),
-              ]),
+            child: SizedBox(
+              height: 600.0,
+              child: Card(
+                elevation: 10.0,
+                child: Row(mainAxisSize: MainAxisSize.min, children: [
+                  Head(),
+                ]),
+              ),
             ),
           ),
         ));

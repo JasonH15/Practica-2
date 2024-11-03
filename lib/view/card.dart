@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tarea1/view/redes_sociales.dart';
 
 class Head extends StatelessWidget {
   const Head({super.key});
-
   @override
   Widget build(BuildContext context) {
     return const Padding(
@@ -10,27 +10,31 @@ class Head extends StatelessWidget {
       child: Column(
         children: [
           CircleAvatar(
-            radius: 58,
-            // backgroundImage: AssetImage('images/usuario.png'),
+            radius: 65,
+            backgroundImage: NetworkImage(
+                'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png'),
           ),
           SizedBox(height: 20),
           Text(
             "Jason Hernandez",
             style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-            ),
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 3.0),
           ),
           Text(
             "Desarrollador frontend",
             style: TextStyle(fontStyle: FontStyle.italic),
           ),
-          SizedBox(height: 12.0),
+          SizedBox(height: 15.0),
           LikeDislikeBtn(),
           SizedBox(height: 9.0),
           Lenguajes(),
-          //SizedBox(height: 140.0),
-          FooterCard(),
+          Spacer(),
+          Center(
+            child: redes_social_link(),
+          ),
+          //FooterCard(),
         ],
       ),
     );
