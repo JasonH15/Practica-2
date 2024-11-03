@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 
 class redes_social_link extends StatefulWidget {
@@ -8,9 +10,6 @@ class redes_social_link extends StatefulWidget {
 }
 
 class _redes_social_linkState extends State<redes_social_link> {
-  bool email = false;
-  bool instagran = false;
-
   final Map<String, bool> iconosActivo = {
     'email': false,
     'instagram': false,

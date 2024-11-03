@@ -30,6 +30,7 @@ class Head extends StatelessWidget {
           LikeDislikeBtn(),
           SizedBox(height: 9.0),
           Lenguajes(),
+          SizedBox(height: 50.0),
           Spacer(),
           Center(
             child: redes_social_link(),
